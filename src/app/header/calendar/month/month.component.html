@@ -1,0 +1,21 @@
+
+<button class="btn btn-primary" 
+(click)="getbuttonCrap()">{{name}}</button>
+<div *ngIf ="buttonStatus">
+    <div id="grid-template">
+        <div class="cell head">Monday</div>
+        <div class="cell head">Tuesday</div>
+        <div class="cell head">Wednesday</div>
+        <div class="cell head">Thursday</div>
+        <div class="cell head">Friday</div>
+        <div class="cell head">Saturday</div>
+        <div class="cell head">Sunday</div>
+        <app-day 
+        *ngFor=" let n of [].constructor(days); let i = index"
+        [dayNumber]="i+1">
+        </app-day>
+    </div>
+</div>
+
+
+

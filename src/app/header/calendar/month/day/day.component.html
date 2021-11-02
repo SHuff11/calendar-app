@@ -1,0 +1,6 @@
+<div class="cell main" 
+    [ngStyle]="{'background' :taskList.length > 0 ? 'red' : 'black'}">
+    <button (click)="getbuttonCrap()">{{ dayNumber }}</button>
+<div *ngIf= "buttonStatus">
+    <app-tasklist [taskList]="taskList"></app-tasklist>
+</div>

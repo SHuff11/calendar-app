@@ -1,0 +1,10 @@
+<div class="col-sm-5 form-group">
+    <label for="">Add Task</label>
+    <input type="text" id="task" class="form-control" [(ngModel)]="task">
+    <button (click)="addTask()" class="btn-danger" type="submit">Save Task</button>
+
+<div *ngFor="let task of taskList; let i=index">
+    <button (click)="deleteTask(task)" class="btn-danger" type="">Delete this task</button>
+    {{ task }}
+</div>
+

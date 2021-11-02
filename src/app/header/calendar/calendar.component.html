@@ -1,0 +1,4 @@
+<app-month 
+  *ngFor="let month of months | keyvalue : originalOrder"
+  [name]="month.key" [days]="month.value">
+</app-month>
